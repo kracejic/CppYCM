@@ -6,5 +6,9 @@
     {
         "caption": "C++YouCompleteMe: Highlight problems",
         "command": "cppycm_highlight_problems"
+    },
+    {
+        "caption": "C++YouCompleteMe: Restart ycmd server",
+        "command": "cppycm_reset"
     }
 ]

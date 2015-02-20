@@ -35,6 +35,12 @@ def server(filepath=None):
         raise RuntimeError(MsgTemplates.SERVER_NOT_LOADED)
     return _server
 
+def deleteSingleton():
+    '''
+    deletes Singleton for use in restart
+    '''
+    global _server
+    _server = None
 
 HMAC_HEADER = 'X-Ycm-Hmac'
 HMAC_SECRET_LENGTH = 16
