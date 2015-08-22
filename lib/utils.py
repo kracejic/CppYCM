@@ -95,6 +95,7 @@ def is_cpp(view):
     '''
     try:
         return view.match_selector(view.sel()[0].begin(), 'source.c++')
+        print("[C++YouCompleteMe] IsCPP")
     except:
         return False
 

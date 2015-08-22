@@ -27,6 +27,7 @@ def server(filepath=None):
     global _server
     if not _server and filepath:
         # load server
+        print("[C++YouCompleteMe] Loading server")
         _server = YcmdHandle.StartYcmdAndReturnHandle()
         _server.WaitUntilReady()
         print(MsgTemplates.LOAD_SERVER_FINISHED.format(

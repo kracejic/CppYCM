@@ -10,6 +10,7 @@ from .listeners import *
 from .commands import *
 
 def plugin_loaded():
+    print("[C++YouCompleteMe] plugin_loaded()")
     if not check_ycmd_server():
         sublime.message_dialog('Ycmd is not found, see https://github.com/glymehrvrd/CppYCM#installation for install instructions.')
 
